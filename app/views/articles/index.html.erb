@@ -1,11 +1,10 @@
-<h1>Hello World</h1>
+<h1>Index page</h1>
 <ul>
+  
   <% @articles.each do |article| %>
     <li>
-      <h2><%= article.title %></h2>
+       <h2> <%= link_to article.title, article %></h2>
     </li>
-    <li> 
-        <p><%= article.body%></p>
-    </li>
+    
   <% end %>
 </ul>
