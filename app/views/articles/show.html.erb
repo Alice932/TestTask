@@ -7,4 +7,11 @@
 <%= link_to "Delete", article_path(@article), 
   method: :delete, data: {confirm: "Вы хотите удалить запись?"}, 
   :class => 'btn btn-danger'%>
+<p>
+
+<h4>Comments</h4>
+<%= render @article.comments %>
+<hr>
+<h4>Add a comment:</h4>
+<%= render 'comments/form' %>
 

@@ -10,7 +10,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="bg-light">
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
   <div class="container-fluid">
     <a class="navbar-brand" > FTL TestTask</a>
@@ -33,5 +33,14 @@
   <div class="container">
     <%= yield %>
   </div>
+  <footer class="footer fixed-bottom bg-dark" >
+      <div class="container">
+        <span class="text-muted">
+          <pre>
+
+          </pre>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
