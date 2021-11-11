@@ -1,13 +1,22 @@
-<%= form_with model: [ @article, @article.comments.build ] do |form| %>
+<div class="border w-25 p-2 ">
+    <%= form_with model: [ @article, @article.comments.build ] do |form| %>
+
+    <p>
+        <%= form.label :status %><br>
+        <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+    </p>
   <p>
-    <%= form.label :commenter %><br>
+    <%= form.label :commenter, "Your name" %><br>
     <%= form.text_field :commenter %>
   </p>
   <p>
-    <%= form.label :body %><br>
+    <%= form.label :body,"Write here" %><br>
     <%= form.text_area :body %>
   </p>
   <p>
-    <%= form.submit({:class => 'btn btn-success'} ) %>
+    <%= form.submit({:class => 'btn btn-outline-success'} ) %>
   </p>
 <% end %>
+
+
+</div>

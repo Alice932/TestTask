@@ -1,17 +1,18 @@
-<h1><%= @article.title %></h1>
-
-<p><%= @article.body %></p>
-
+<h2><%= @article.title %></h2>
+<div class="border bg-white rounded p-2">
+<h5><%= @article.body %></h5>
+</div>
 <hr>
-<%= link_to "Edit", edit_article_path(@article), :class => 'btn btn-warning'%>
-<%= link_to "Delete", article_path(@article), 
+<div class="d-flex flex-row ">
+<%= button_to "Edit", edit_article_path(@article), :class => 'btn btn-warning  m-1'%>
+<%= button_to "Delete", article_path(@article), 
   method: :delete, data: {confirm: "Вы хотите удалить запись?"}, 
-  :class => 'btn btn-danger'%>
-<p>
-
-<h4>Comments</h4>
+  :class => 'btn btn-danger m-1'%>
+</div>
+<p></p>
+<h4>Comments:</h4>
 <%= render @article.comments %>
-<hr>
+
 <h4>Add a comment:</h4>
 <%= render 'comments/form' %>
-
+<hr>
