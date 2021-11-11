@@ -1,24 +1,23 @@
-# README
+How to install
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Console:
 
-Things you may want to cover:
+     
+        git clone -b main https://github.com/Alice932/TestTask.git 
 
-* Ruby version
+***(or download ZIP)***
 
-* System dependencies
 
-* Configuration
+        cd ../TestTask-main 
+        
+        bundle install
 
-* Database creation
+        rails server
 
-* Database initialization
+Go to [localhost:3000](localhost:3000)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Submit pending migrations 
+***(Press the button)***
 
-* Deployment instructions
-
-* ...
+It's all
