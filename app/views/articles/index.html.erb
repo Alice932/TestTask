@@ -3,10 +3,10 @@
 
   <% @articles.each do |article| %>
   <% unless article.archived? %>
-      
+
         <h4><span class="nav-link"> <%= link_to article.title, article, class:' nav-link px-1 text-dark'%></span></h4>
-        
+
         <hr>
-      
+
   <% end %>
   <% end %>
