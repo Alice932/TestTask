@@ -5,8 +5,8 @@
 <hr>
 <div class="d-flex flex-row ">
   <%= link_to "Edit", edit_article_path(@article), :class => 'btn btn-warning  m-1'%>
-  <%= button_to "Delete", article_path(@article), 
-    method: :delete, data: {confirm: "Вы хотите удалить запись?"}, 
+  <%= button_to "Delete", article_path(@article),
+    method: :delete, data: {confirm: "Вы хотите удалить запись?"},
     :class => 'btn btn-danger m-1'%>
 </div>
 <p></p>
